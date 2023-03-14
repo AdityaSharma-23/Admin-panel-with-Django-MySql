@@ -1,0 +1,43 @@
+{%  extends 'crud/main.html' %}
+{% load static %}
+{% block content %}
+
+<br>
+
+<style>
+	.backg{
+		background-color: rgba(188, 188, 253, 0.911);
+	}
+</style>
+
+<div class="row">
+	<div class="col-md-6">
+		<div class="card card-body backg">
+
+			<form action="" method="POST">
+				{% csrf_token %}
+				<div class="card card-body">
+					<table>
+						{{form.as_table}}     <!-- this was passed in views context dictionary so written here (form) -->
+					</table>
+					
+					<br><br>
+					<center>
+						<input type="submit" name="Submit">
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					</center>
+				</div>
+
+				
+			</form>
+
+		</div>
+	</div>
+</div>
+
+<br>
+
+{% endblock %}
