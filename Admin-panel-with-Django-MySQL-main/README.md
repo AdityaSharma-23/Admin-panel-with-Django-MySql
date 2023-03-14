@@ -1,4 +1,4 @@
-# Admin Panel with Django MySQL By Aditya
+# Admin Panel with Django MySQL By Aditya Sharma
 
 ### Build with
 - [Django](https://docs.djangoproject.com/en/4.0/)
